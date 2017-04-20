@@ -8,7 +8,7 @@ class HtmlDownloader(object):
         if url is None:
             return None
 
-        response=request.urlopen(url)
+        response=request.urlopen(url)          #下载器的第一种方法，得到response
 
         if response.getcode()!=200:
             return None
